@@ -1,0 +1,96 @@
+
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Manrope', sans-serif;
+	font-weight: 800;
+}
+
+button{
+	background-color: transparent;
+	border: none;
+}
+
+.main{
+	background-color: hsl(218, 23%, 16%);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.app{
+	background-color: hsl(217, 19%, 24%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1.3rem;
+	max-width: 540px;
+	border-radius: 0.8rem;
+	padding: 2.8rem;
+	position: relative;
+}
+
+#btn-advice{
+	width: 60px;
+	height: 60px;
+	background-color: hsl(150, 100%, 66%);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: -1.8rem;
+	cursor: pointer;
+}
+#btn-advice:hover{
+	box-shadow: 0rem 0rem 1rem hsl(150, 100%, 66%);
+
+}
+
+
+.advice{
+	font-size: 28px;
+	color: hsl(193, 38%, 86%);
+	text-align: center;
+}
+
+.info-advice{
+	font-size: 14px;
+	color: hsl(150, 100%, 66%);
+	letter-spacing: 0.2rem ;
+}
+
+.img-divider{
+	padding: 1.3rem 0rem;
+}
+
+@media screen and (min-width: 375px){
+
+	.main{
+		padding: 0rem 1rem ;
+	}
+	.app{
+		width: 100%;
+	}
+
+	.advice{
+		font-size: 24px;
+		color: hsl(193, 38%, 86%);
+		text-align: center;
+	}
+
+	.info-advice{
+		font-size: 12px;
+		color: hsl(150, 100%, 66%);
+		letter-spacing: 0.2rem ;
+	}
+
+
+
+
+}
